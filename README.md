@@ -32,7 +32,7 @@ git switch nome-branch
 - muda pra essa branch
 - se a branch não existir, dá erro.
 
-git switch -b nome-branch
+git switch -c nome-branch
 - cria uma nova branch e já entra nela
 
 
