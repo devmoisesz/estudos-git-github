@@ -15,6 +15,9 @@ git log
 git status
 - como está o estado da nossa ramificações
 
+git remote add (url)
+- add um novo repositorio remoto
+
 git diff
 - que mostra o que foi alterado
 - o que tem de alteração na ramificação
@@ -25,7 +28,7 @@ git merge
 git branch
 - mosta nossa branch atual
 
-git branch -b nome-da-branch
+git branch nome-da-branch
 - cria uma nova branch apartir do histórico que estamos
 
 git switch nome-branch
@@ -35,9 +38,12 @@ git switch nome-branch
 git switch -c nome-branch
 - cria uma nova branch e já entra nela
 
+git checkout branch -- arquivo
+- puxa arquivo de outra branch pra branch atual
 
-git remote add <nome> <url>
-- add um novo repositorio remoto
+git restore --source=branch arquivo
+- puxa um arquico específico de outra branch pra branch atual
+- versão moderna do: git checkout branch -- arquivo
 
 git push <nome> <nome-da-branch>
 - manda nossas alterações locais para o repositório remoto, pra cada branch
