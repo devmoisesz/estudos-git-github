@@ -3,6 +3,9 @@
 git init
 - inicar novo projeto com git
 
+git --version 
+- Verifica a versão di git na máquina do usuário
+
 git add <nome-arquivo>/.
 -add os arquivos que estão prontos para serem commitados
 
@@ -25,11 +28,11 @@ git merge
 git branch
 -mosta nossa branch atual
 
-git checkout <nome-branch>
+git checkout nome-branch
 - muda pra essa branch
 
-git branch -b <nome-da-branch>
--cria uma nova branch apartir do histórico que estamos
+git branch -b nome-da-branch
+- cria uma nova branch apartir do histórico que estamos
 
 git remote add <nome> <url>
 - add um novo repositorio remoto
