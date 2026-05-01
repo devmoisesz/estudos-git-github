@@ -31,6 +31,13 @@ git branch
 git branch nome-da-branch
 - cria uma nova branch apartir do histórico que estamos
 
+git branch -d branch
+- deleta uma branch local
+- não é possível deletar a branch atual, mude de branch antes
+
+git branch -D branch
+- deleta uma branch local forçando (mesmo sem merge)
+
 git switch nome-branch
 - muda pra essa branch
 - se a branch não existir, dá erro.
@@ -47,6 +54,13 @@ git restore --source=branch arquivo
 
 git push <nome> <nome-da-branch>
 - manda nossas alterações locais para o repositório remoto, pra cada branch
+
+git push origin -u branch
+- envia a branch para o repositótio remoto e define como padrão
+- depois disso, pode usar só git push e git pull sem precisar especificar a branch
+
+git push origin --delete branch
+- deleta uma branch no repositorio remoto
 
 git pull <nome> <nome-da-branch>
 - pega as alterações do repositório remoto, e joga pra nossa maquina
